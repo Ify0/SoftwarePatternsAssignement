@@ -1106,9 +1106,7 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 
 	// WindowsListener methods
 	public void windowClosing(WindowEvent e) {
-		// exit application
-		//exitApp()
-		// Example usage
+		
 		 Command exitCommand = new ExitCommand(file); // Pass your file instance here
 		 exitCommand.execute();
 

@@ -17,19 +17,12 @@ class JTextFieldLimit extends PlainDocument {
 		    //super();
 		    this.limit = limit;
 		  }// end JTextFieldLimit
-	  
-	 //JTextFieldLimit(int limit, boolean upper) {
-	    //super();
-	   /// this.limit = limit;
-	    //this.upper = upper;
-	  //}// end JTextFieldLimit
+	
 
 	  public void insertString(int offset, String str, AttributeSet attr) throws BadLocationException {
 	    if (str == null)
 	      return;
-	    //making use of upper
-	   // if (upper)
-	     //   str = str.toUpperCase();
+	
 
 	    if ((getLength() + str.length()) <= limit) 
 	      super.insertString(offset, str, attr);
